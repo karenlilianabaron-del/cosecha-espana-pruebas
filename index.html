@@ -76,21 +76,7 @@ input,select,textarea{width:100%;padding:11px;border:1px solid #d4ded8;border-ra
 </div>
 </section>
 
-<nav>
-<button id="navHome" class="tab active" style="display:none" onclick="view('home',this)">🏠 Inicio</button>
-<button id="navSearch" class="tab" onclick="view('search',this)">🔎 Buscar</button>
-<button id="navApplications" class="tab" onclick="view('apps',this);loadApplications()">📋 Mis postulaciones</button>
-<button id="navProfile" class="tab" onclick="view('profile',this);loadProfile()">👤 Perfil</button>
-<button id="navPublish" class="tab" onclick="view('publish',this)">🌱 Publicar</button>
-<button id="navCandidates" class="tab" onclick="view('candidates',this);loadCandidatesV2()">👷 Candidatos</button>
-<button id="navChat" class="tab" onclick="view('chat',this);showChatInbox()">💬 Chat</button>
-<button id="navAdmin" class="tab" style="display:none" onclick="view('admin',this);loadAdminVerifications()">🛡️ Administración</button>
-<button id="navAdminSummary" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('summary')">📊 Resumen</button>
-<button id="navAdminVerifications" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('verifications');loadAdminVerifications()">✅ Verificaciones</button>
-<button id="navAdminUsers" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('users')">👥 Usuarios</button>
-<button id="navAdminReports" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('reports')">📋 Reportes</button>
-<button id="navAdminStatistics" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('statistics')">📈 Estadísticas</button>
-</nav>
+
 
 
 <section id="passwordChange" class="hidden"><div class="card"><h2>🔒 Cambiar contraseña</h2><label>Contraseña actual</label><input id="currentPassword" type="password" placeholder="Escribe tu contraseña actual"><label>Nueva contraseña</label><input id="newPassword" type="password" placeholder="Escribe tu nueva contraseña"><label>Confirmar nueva contraseña</label><input id="confirmNewPassword" type="password" placeholder="Repite tu nueva contraseña"><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" onclick="changePassword()">GUARDAR NUEVA CONTRASEÑA</button><button class="btn alt" onclick="closePasswordChange()">CANCELAR</button></div></div></section>
