@@ -28,6 +28,7 @@ input,select,textarea{width:100%;padding:11px;border:1px solid #d4ded8;border-ra
 <main>
 <div class="card"><span id="status">Modo demo</span></div>
 
+
 <nav>
 <button id="navHome" class="tab active" style="display:none" onclick="view('home',this)">🏠 Inicio</button>
 <button id="navSearch" class="tab" onclick="view('search',this)">🔎 Buscar</button>
@@ -37,7 +38,13 @@ input,select,textarea{width:100%;padding:11px;border:1px solid #d4ded8;border-ra
 <button id="navCandidates" class="tab" onclick="view('candidates',this);loadCandidatesV2()">👷 Candidatos</button>
 <button id="navChat" class="tab" onclick="view('chat',this);showChatInbox()">💬 Chat</button>
 <button id="navAdmin" class="tab" style="display:none" onclick="view('admin',this);loadAdminVerifications()">🛡️ Administración</button>
+<button id="navAdminSummary" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('summary')">📊 Resumen</button>
+<button id="navAdminVerifications" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('verifications');loadAdminVerifications()">✅ Verificaciones</button>
+<button id="navAdminUsers" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('users')">👥 Usuarios</button>
+<button id="navAdminReports" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('reports')">📋 Reportes</button>
+<button id="navAdminStatistics" class="tab" style="display:none" onclick="view('admin',this);showAdminSection('statistics')">📈 Estadísticas</button>
 </nav>
+
 
 <section id="home"><div class="card"><h2>Bienvenida</h2><p>0.9 añade conexión preparada con Supabase Auth y PostgreSQL. Sin configuración de credenciales, la app continúa en modo demo.</p></div></section>
 
